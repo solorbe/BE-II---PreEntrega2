@@ -1,4 +1,4 @@
-# PreEntrega 1 - Backend II
+# PreEntrega 2 - Backend II
 
 <!-- ;
 endpoints principales;
@@ -49,17 +49,17 @@ En .env.example se encuentran disponibles los nombres de las variables que resul
 ## Flujo de una petición en Preentrega I
 
 ```bash
-Cliente -> Routers -> Controllers -> Model
+Cliente -> Routers -> Controllers -> Services -> Repositories -> DAO -> Model
 ```
 
 Routes: definen endpoints.
 Controllers: reciben request y devuelven response.
 Models: esquema del recurso.
-<!-- Services: manejan lógica de negocio.
+Services: manejan lógica de negocio.
 Repositories: organizan operaciones de datos.
 DAOs: interactúan con la persistencia.
-DTOs: definen qué información se expone. 
-Middlewares: procesan validaciones intermedias.-->
+<!-- DTOs: definen qué información se expone. -->
+Middlewares: procesan validaciones intermedias.
 
 ## Endpoint definidos en Preentrega I para usar en Postmam
 
