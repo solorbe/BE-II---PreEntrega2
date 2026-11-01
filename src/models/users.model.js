@@ -15,13 +15,15 @@ const userSchema = new mongoose.Schema(
     email: {
       type: String,
       required: true,
-      unique: true,
+      trim: true,
       lowercase: true,
-      trim: true
+      unique: true,
+      match: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
     },
     password: {
       type: String,
-      required: true
+      required: true,
+      trim: true
     },
     role: {
       type: String,
