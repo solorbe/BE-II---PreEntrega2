@@ -15,4 +15,4 @@ role: {
 timestamps: true
 }
 )
-export const SessionModel = mongoose.model('Session', sessionSchema)
+export const SessionModel = mongoose.model('Sessions', sessionSchema)
