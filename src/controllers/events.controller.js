@@ -34,7 +34,7 @@ export const createEvent = async (req, res) => {
         .json({ status: 'error', message: 'Faltan campos obligatorios' });
     }
 
-    const newEvent = await EventService.createEvent(req.body);
+    const newEvent = await serviceEvent.createEvent(req.body);
     return res.status(201).json({
       status: 'success',
       payload: newEvent

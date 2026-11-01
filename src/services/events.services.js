@@ -11,7 +11,7 @@ export class EventService {
   }
 
   async createEvent(data) {
-  return this.repository.create(data);
+  return this.eventRepository.create(data);
   }
 }
 
